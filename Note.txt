@@ -1,4 +1,12 @@
-Model: HandNet_2.h5 ~~ untrained_livenessNet_4.h5
+Model: HandNet_1.h5 ~~ untrained_HandNet_1.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 103/120 - loss: 0.0567 - accuracy: 0.9820 - val_loss: 1.5011e-05 - val_accuracy: 0.9964
+accuracy: 99.54%, train/val/test : 0.7/0.15/0.15
+
+_____________________________________________________
+Model: HandNet_2.h5 ~~ untrained_HandNet_1.h5
 input: 64, 64
 Dropout: 0.25 
 lr = 0.00001
@@ -6,9 +14,40 @@ Epoch 120/120 - loss: 0.0567 - accuracy: 0.9820 - val_loss: 1.5011e-05 - val_acc
 accuracy: 99.46%, train/val/test : 0.7/0.15/0.15
 
 _____________________________________________________
-Model: HandNet_3.h5 ~~ untrained_livenessNet_4.h5
+Model: HandNet_2_1.h5 ~~ untrained_HandNet_1.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 114/120 - loss: 0._ - accuracy: 0._ - val_loss: _e-05 - val_accuracy: 0.9977
+accuracy: 99.62%, train/val/test : 0.7/0.15/0.15
+
+_____________________________________________________
+Model: HandNet_3.h5 ~~ untrained_HandNet_1.h5
 input: 64, 64
 Dropout: 0.25 
 lr = 0.00001
 Epoch 120/120 - loss: 0.0507 - accuracy: 0.9840 - val_loss: 5.2103e-05 - val_accuracy: 0.9973
 accuracy: 99.46%, train/val/test : 0.8/0.1/0.1
+_____________________________________________________
+Model: HandNet_3_1.h5 ~~ untrained_HandNet_1.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 101/120 - loss: 0._ - accuracy: 0._ - val_loss: _e-05 - val_accuracy: 0.9985
+accuracy: 99.69%, train/val/test : 0.8/0.1/0.1
+
+_____________________________________________________
+Model: HandNet_4.h5 ~~ untrained_HandNet_1.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 120/120 - loss: 0.0628 - accuracy: 0.9790 - val_loss: 1.3687e-04 - val_accuracy: 0.9950
+accuracy: 99.35%, train/val/test : 0.6/0.2/0.2
+
+_____________________________________________________
+Model: HandNet_4.h5 ~~ untrained_HandNet_1.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 115/120 - loss: 0._ - accuracy: 0._ - val_loss: _e-04 - val_accuracy: 0.9956
+accuracy: 99.44%, train/val/test : 0.6/0.2/0.2

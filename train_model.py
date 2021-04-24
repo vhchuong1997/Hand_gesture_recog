@@ -27,28 +27,28 @@ def main():
     val_generator = ImageDataGenerator(vertical_flip=False,
                                preprocessing_function=preprocess_input)
     train_gen = generator.flow_from_directory(
-    'output8_1_1/train',
+    'output6_2_2/train',
     class_mode='categorical',
     target_size=(ROWS, COLS),
     batch_size = 32,
     shuffle= True
     )
     val_gen = val_generator.flow_from_directory(
-    'output8_1_1/val',
+    'output6_2_2/val',
     class_mode='categorical',
     target_size=(ROWS, COLS),
     batch_size = 32,
     shuffle= False 
     )
     test_gen = val_generator.flow_from_directory(
-    'output8_1_1/test',
+    'output6_2_2/test',
     class_mode='categorical',
     target_size=(ROWS, COLS),
     batch_size = 32,
     shuffle= False
     )
 
-    NAME = 'HandNet_3'
+    NAME = 'HandNet_4'
     if not os.path.isdir("ckpts/"+ NAME):
         os.mkdir("ckpts/"+ NAME)
     tensorboard = TensorBoard(log_dir="logs/{}".format(NAME))
