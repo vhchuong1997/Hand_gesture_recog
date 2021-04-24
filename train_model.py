@@ -6,14 +6,13 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping, Learnin
 import os
 
 def main():
-    model_dir = 'untrained_HandNet_1.h5'
+    model_dir = 'untrained_HandNet_2.h5'
     handNet = models.load_model(model_dir)
 
     epochs = 120
 
     handNet.compile(loss='categorical_crossentropy', 
-               #optimizer=optimizers.SGD(lr=1e-4, momentum=0.9),
-                optimizer = optimizers.Adam(learning_rate=0.0001),# decay=0.0001/epochs),
+                optimizer = optimizers.Adam(learning_rate=0.0001),
                 metrics=['accuracy'])
     handNet.summary()
 
@@ -48,15 +47,13 @@ def main():
     shuffle= False
     )
 
-    NAME = 'HandNet_4'
+    NAME = 'HandNet_7'
     if not os.path.isdir("ckpts/"+ NAME):
         os.mkdir("ckpts/"+ NAME)
     tensorboard = TensorBoard(log_dir="logs/{}".format(NAME))
     file_path = "ckpts/"+ NAME +"/weights.epoch_{epoch:02d}-val_accuracy_{val_accuracy:.4f}.h5"
     checkpoint = ModelCheckpoint(file_path, monitor='val_accuracy', verbose=1, save_best_only=True, mode='max',period=1)
     early = EarlyStopping(monitor="val_accuracy", mode="max", patience=20)
-
-    
 
     handNet.fit(train_gen, epochs=epochs, validation_data=val_gen, callbacks=[tensorboard, checkpoint, early])
     handNet.save('models/' + NAME + '.h5')

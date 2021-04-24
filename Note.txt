@@ -45,9 +45,33 @@ Epoch 120/120 - loss: 0.0628 - accuracy: 0.9790 - val_loss: 1.3687e-04 - val_acc
 accuracy: 99.35%, train/val/test : 0.6/0.2/0.2
 
 _____________________________________________________
-Model: HandNet_4.h5 ~~ untrained_HandNet_1.h5
+Model: HandNet_4_1.h5 ~~ untrained_HandNet_1.h5
 input: 64, 64
 Dropout: 0.25 
 lr = 0.00001
 Epoch 115/120 - loss: 0._ - accuracy: 0._ - val_loss: _e-04 - val_accuracy: 0.9956
 accuracy: 99.44%, train/val/test : 0.6/0.2/0.2
+
+_____________________________________________________
+Model: HandNet_5.h5 ~~ untrained_HandNet_2.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 96/120 - loss: 0.0374 - accuracy: 0.9885 - val_loss: 0.0011 - val_accuracy: 0.9964
+accuracy: 99.64%, train/val/test : 0.7/0.15/0.15
+
+_____________________________________________________
+Model: HandNet_6.h5 ~~ untrained_HandNet_2.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 93/120 - loss: 0.0354 - accuracy: 0.9897 - val_loss: 3.3913e-05 - val_accuracy: 0.9973
+accuracy: 99.81%, train/val/test : 0.8/0.1/0.1
+
+_____________________________________________________
+Model: HandNet_7.h5 ~~ untrained_HandNet_2.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 120/120 - loss: 0.0345 - accuracy: 0.9902 - val_loss: 9.8887e-05 - val_accuracy: 0.9967
+accuracy: 99.52%, train/val/test : 0.6/0.2/0.2
