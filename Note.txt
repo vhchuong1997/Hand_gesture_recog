@@ -1,0 +1,14 @@
+Model: HandNet_2.h5 ~~ untrained_livenessNet_4.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 120/120 - loss: 0.0567 - accuracy: 0.9820 - val_loss: 1.5011e-05 - val_accuracy: 0.9964
+accuracy: 99.46%, train/val/test : 0.7/0.15/0.15
+
+_____________________________________________________
+Model: HandNet_3.h5 ~~ untrained_livenessNet_4.h5
+input: 64, 64
+Dropout: 0.25 
+lr = 0.00001
+Epoch 120/120 - loss: 0.0507 - accuracy: 0.9840 - val_loss: 5.2103e-05 - val_accuracy: 0.9973
+accuracy: 99.46%, train/val/test : 0.8/0.1/0.1
